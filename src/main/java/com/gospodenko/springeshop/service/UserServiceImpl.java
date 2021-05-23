@@ -4,7 +4,6 @@ import com.gospodenko.springeshop.dao.UserRepository;
 import com.gospodenko.springeshop.domain.Role;
 import com.gospodenko.springeshop.domain.User;
 import com.gospodenko.springeshop.dto.UserDTO;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -17,7 +16,7 @@ import java.util.List;
 import java.util.Objects;
 
 @Service
-public class UserServiceImpl implements UserService {
+public class UserServiceImpl implements UserService{
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
 
@@ -36,6 +35,7 @@ public class UserServiceImpl implements UserService {
                 .password(passwordEncoder.encode(userDTO.getPassword()))
                 .email(userDTO.getEmail())
                 .role(Role.CLIENT)
+                .phone(userDTO.getPhone())
                 .build();
         userRepository.save(user);
         return true;
