@@ -29,7 +29,7 @@ public class Bucket {
 
     @ManyToMany
     @JoinTable(name = "BUCKETS_PRODUCTS",
-    joinColumns = @JoinColumn(name = "BUCKET_ID"),
-    inverseJoinColumns = @JoinColumn(name = "PRODUCT_ID"))
+            joinColumns = @JoinColumn(name = "BUCKET_ID"),
+            inverseJoinColumns = @JoinColumn(name = "PRODUCT_ID"))
     private List<Product> products;
 }

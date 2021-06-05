@@ -1,0 +1,43 @@
+package com.gospodenko.springeshop.controllers;
+
+import com.gospodenko.springeshop.dto.ProductDTO;
+import com.gospodenko.springeshop.service.ProductService;
+import com.gospodenko.springeshop.service.SessionObjectHolder;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import java.security.Principal;
+import java.util.List;
+
+@Controller
+@RequestMapping("/products")
+public class ProductController {
+
+    private final ProductService productService;
+    private final SessionObjectHolder sessionObjectHolder;
+
+    public ProductController(ProductService productService, SessionObjectHolder sessionObjectHolder) {
+        this.productService = productService;
+        this.sessionObjectHolder = sessionObjectHolder;
+    }
+
+    @GetMapping
+    public String list(Model model) {
+        List<ProductDTO> list = productService.getAll();
+        model.addAttribute("products", list);
+        return "products";
+    }
+
+    @GetMapping("/{id}/bucket")
+    public String addBucket(@PathVariable Long id, Principal principal) {
+        sessionObjectHolder.addClick();
+        if (principal == null) {
+            return "redirect:/products";
+        }
+        productService.AddToUserBucket(id, principal.getName());
+        return "redirect:/products";
+    }
+}
