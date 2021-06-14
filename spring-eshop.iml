@@ -7,6 +7,7 @@
         <sourceRoots>
           <root url="file://$MODULE_DIR$/src/main/java" />
           <root url="file://$MODULE_DIR$/src/main/resources" />
+          <root url="file://$MODULE_DIR$/target/generated-sources/annotations" />
         </sourceRoots>
       </configuration>
     </facet>
@@ -31,6 +32,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/target/generated-sources/annotations" isTestSource="false" generated="true" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
@@ -55,7 +57,6 @@
     <orderEntry type="library" name="Maven: org.glassfish.jaxb:jaxb-runtime:2.3.4" level="project" />
     <orderEntry type="library" name="Maven: org.glassfish.jaxb:txw2:2.3.4" level="project" />
     <orderEntry type="library" name="Maven: com.sun.istack:istack-commons-runtime:3.0.12" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: com.sun.activation:jakarta.activation:1.2.2" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-jpa:2.5.1" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-commons:2.5.1" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-orm:5.3.7" level="project" />
@@ -90,9 +91,6 @@
     <orderEntry type="library" name="Maven: org.thymeleaf.extras:thymeleaf-extras-java8time:3.0.4.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-web:2.5.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-json:2.5.0" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.12.3" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.12.3" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.12.3" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.12.3" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.12.3" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.module:jackson-module-parameter-names:2.12.3" level="project" />
@@ -145,5 +143,29 @@
     <orderEntry type="library" name="Maven: org.springframework.security:spring-security-crypto:5.5.0" level="project" />
     <orderEntry type="library" name="Maven: org.mapstruct:mapstruct:1.4.2.Final" level="project" />
     <orderEntry type="library" name="Maven: org.mapstruct:mapstruct-processor:1.4.2.Final" level="project" />
+    <orderEntry type="library" name="Maven: wsdl4j:wsdl4j:1.6.3" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-web-services:2.5.0" level="project" />
+    <orderEntry type="library" name="Maven: com.sun.xml.messaging.saaj:saaj-impl:1.5.3" level="project" />
+    <orderEntry type="library" name="Maven: jakarta.xml.soap:jakarta.xml.soap-api:1.4.2" level="project" />
+    <orderEntry type="library" name="Maven: org.jvnet.staxex:stax-ex:1.8.3" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: com.sun.activation:jakarta.activation:1.2.2" level="project" />
+    <orderEntry type="library" name="Maven: jakarta.xml.ws:jakarta.xml.ws-api:2.3.3" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: jakarta.jws:jakarta.jws-api:2.1.0" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-oxm:5.3.7" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.ws:spring-ws-core:3.1.1" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.ws:spring-xml:3.1.1" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-websocket:2.5.0" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-messaging:5.3.7" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-websocket:5.3.7" level="project" />
+    <orderEntry type="library" name="Maven: org.webjars:sockjs-client:1.5.1" level="project" />
+    <orderEntry type="library" name="Maven: org.webjars:stomp-websocket:2.3.4" level="project" />
+    <orderEntry type="library" name="Maven: org.webjars:jquery:3.6.0" level="project" />
+    <orderEntry type="library" name="Maven: org.webjars:webjars-locator:0.41" level="project" />
+    <orderEntry type="library" name="Maven: org.webjars:webjars-locator-core:0.46" level="project" />
+    <orderEntry type="library" name="Maven: io.github.classgraph:classgraph:4.8.69" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.12.3" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.12.3" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.12.3" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.12.0" level="project" />
   </component>
 </module>
